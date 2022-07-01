@@ -2,7 +2,7 @@ let modInfo = {
 	name: "duck incremental",
 	id: "duckgame",
 	author: "your mom",
-	pointsName: "duck points",
+	pointsName: "d points",
 	modFiles: ["layers.js", "tree.js"],
 
 	discordName: "",
