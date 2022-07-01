@@ -1,14 +1,14 @@
 let modInfo = {
-	name: "The ??? Tree",
-	id: "mymod",
-	author: "nobody",
-	pointsName: "points",
+	name: "duck incremental",
+	id: "duckgame",
+	author: "your mom",
+	pointsName: "duck points",
 	modFiles: ["layers.js", "tree.js"],
 
 	discordName: "",
 	discordLink: "",
-	initialStartPoints: new Decimal (10), // Used for hard resets and new players
-	offlineLimit: 1,  // In hours
+	initialStartPoints: new Decimal (1), // Used for hard resets and new players
+	offlineLimit: 10,  // In hours
 }
 
 // Set your version in num and name
