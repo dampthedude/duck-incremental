@@ -1,4 +1,4 @@
-addLayer("d", {
+addLayer("1", {
     name: "duck basics", // This is optional, only used in a few places, If absent it just uses the layer id.
     symbol: "d", // This appears on the layer's node. Default is the id with the first letter capitalized
     position: 0, // Horizontal position within a row. By default it uses the layer id and sorts in alphabetical order
@@ -12,7 +12,7 @@ addLayer("d", {
     baseResource: "ducks ", // Name of resource prestige is based on
     baseAmount() {return player.points}, // Get the current amount of baseResource
     type: "normal", // normal: cost to gain currency depends on amount gained. static: cost depends on how much you already have
-    exponent: 0.01, // Prestige currency exponent
+    exponent: 1, // Prestige currency exponent
     gainMult() { // Calculate the multiplier for main currency from bonuses
         mult = new Decimal(10)
         return mult
