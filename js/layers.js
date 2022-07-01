@@ -7,12 +7,12 @@ addLayer("1", {
 		points: new Decimal(0),
     }},
     color: "yellow",
-    requires: new Decimal(10), // Can be a function that takes requirement increases into account
+    requires: new Decimal(5), // Can be a function that takes requirement increases into account
     resource: "ducks", // Name of prestige currency
     baseResource: "d points", // Name of resource prestige is based on
     baseAmount() {return player.points}, // Get the current amount of baseResource
     type: "normal", // normal: cost to gain currency depends on amount gained. static: cost depends on how much you already have
-    exponent: 1.5, // Prestige currency exponent
+    exponent: 0.5, // Prestige currency exponent
     gainMult() { // Calculate the multiplier for main currency from bonuses
         mult = new Decimal(1)
         return mult
@@ -24,6 +24,13 @@ addLayer("1", {
     hotkeys: [
 
     ],
-    layerShown(){return true}
+    layerShown(){return true},
+    upgrades: {
+        11: {
+            title: "duck efficiency",
+            description: "makes ducks actually do something by making 'd point' production double",
+            cost: new Decimal(3),
+        },
+    },
 
 })
